@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="site-branding">
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/images/LegisPeritus.png" alt="UAB Legisperitus">
+    </a>
+    <p class="site-description">Teisinės paslaugos</p>
+  </div>
+  <nav class="main-navigation">
+    <a href="{{ site.baseurl }}/paslaugos"{% if page.url contains '/paslaugos' %} class="active"{% endif %}>Veikla</a>
+    <a href="{{ site.baseurl }}/naujienos"{% if page.url contains '/naujienos' %} class="active"{% endif %}>Aktualijos</a>
+    <a href="{{ site.baseurl }}/dokumentai"{% if page.url contains '/dokumentai' %} class="active"{% endif %}>Dokumentai</a>
+    <a href="{{ site.baseurl }}/kontaktai"{% if page.url contains '/kontaktai' %} class="active"{% endif %}>Bendraukime</a>
+  </nav>
+</header>
